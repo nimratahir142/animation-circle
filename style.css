@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    background-color: rgb(150, 113, 113);
+}
+.circle1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid green;
+    border-top: 5px solid red;
+    animation: ani 4s linear infinite;
+    margin: 40%;
+}
+@keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
